@@ -1,5 +1,5 @@
 module.exports = (gulp, plugins) => {
-    return function () {
+    return () => {
         gulp.src('./scripts/index.js')
             .pipe(plugins.minify({
                 noSource: true

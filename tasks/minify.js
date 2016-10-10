@@ -4,6 +4,6 @@ module.exports = (gulp, plugins) => {
             .pipe(plugins.minify({
                 noSource: true
             }))
-            .pipe(gulp.dest('./build-output'))
-    }
+            .pipe(gulp.dest('./build-output'));
+    };
 };

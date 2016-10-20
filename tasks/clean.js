@@ -1,8 +1,8 @@
-module.exports = (gulp, plugins) => {
+const del = require('del');
+
+module.exports = () => {
+    console.log('--- clean');
     return () => {
-        gulp.src('./build-output')
-            .pipe(plugins.clean({
-                read: false
-            }));
+        del.sync(['./build-output']);
     };
 };
